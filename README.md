@@ -25,7 +25,7 @@
 
 - 📄 Read about my experiences in [my CV](https://cvdesignr.com/p/61dde78bae076?hl=en_GB)
 
-- ⚡ Fun fact **I am immigrate to seattle!**
+- ⚡ Fun fact **I am immigrating to seattle!**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
