@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm NIMA KELIDARI</h1>
-<h3 align="center">Undergraduate CS student</h3>
+<h3 align="center">Developer / ML Engineer</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=nikelroid&label=Profile%20views&color=0e75b6&style=flat" alt="nikelroid" /> </p>
 
@@ -9,7 +9,7 @@
 
 - 🔭 I’m currently studying in **Sharif University**
 
-- 🌱 I’m currently learning **MLOps Basics, Model Serving**
+- 🌱 I’m currently learning **MLOps Basics, Docker**
 
 - 👯 I’m working on **3D Segment Anything in Medical images**
 
