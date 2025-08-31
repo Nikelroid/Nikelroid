@@ -9,23 +9,23 @@
 
 - 🔭 I’m currently studying in **USC University**
 
-- 🌱 I’m currently learning **MLOps Basics, Docker**
+- 🌱 I’m currently learning **MLOps Basics, ROC**
 
-- 👯 I’m working on **3D Segment Anything in Medical images**
+- 👯 I’m working on **Real-Time AI Vision Assistant with Smart Question-Answer Matching**
 
 - 🤝 I’m looking for help with [Segment Anything in Medical Images](https://github.com/bowang-lab/MedSAM)
 
 - 👨‍💻 All of my projects are available at [Ripository](https://github.com/Nikelroid?tab=repositories)
 
-- 📝 I regularly twitte my attitudes [in my X account](https://twitter.com/adivide2)
+- 📝 I regularly tweet my attitudes [in my X account](https://twitter.com/adivide2)
 
-- 💬 Ask me about **Python, Pytorch**
+- 💬 Ask me about **Computer Vision, Image Processing**
 
-- 📫 How to reach me **Nikelroid@gmail.com**
+- 📫 How to reach me **kelidari.nima@gmail.com**
 
 - 📄 Read about my experiences in [my CV](https://cvdesignr.com/p/61dde78bae076?hl=en_GB)
 
-- ⚡ Fun fact **I immigrated to to seattle recently!**
+- ⚡ Fun fact **I immigrated started my 2nd semester recently!**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
