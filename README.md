@@ -7,7 +7,7 @@
 
 <p align="left"> <a href="https://twitter.com/adivide2" target="blank"><img src="https://img.shields.io/twitter/follow/adivide2?logo=twitter&style=for-the-badge" alt="adivide2" /></a> </p>
 
-- 🔭 I’m currently studying in **USC University**
+- 🔭 I’m currently studying in **University of Southern California**
 
 - 🌱 I’m currently learning **MLOps Basics, ROC**
 
