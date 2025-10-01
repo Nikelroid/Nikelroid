@@ -9,7 +9,7 @@
 
 - 🔭 I’m currently studying in **University of Southern California**
 
-- 🌱 I’m currently learning **MLOps Basics, ROC**
+- 🌱 I’m currently learning **Advanced MLOps , ROC**
 
 - 👯 I’m working on **Real-Time AI Vision Assistant with Smart Question-Answer Matching**
 
