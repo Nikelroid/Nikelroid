@@ -1,40 +1,110 @@
-<h1 align="center">Hi 👋, I'm NIMA KELIDARI</h1>
-<h3 align="center">AI / ML Engineer</h3>
+<div align="center">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=nikelroid&label=Profile%20views&color=0e75b6&style=flat" alt="nikelroid" /> </p>
+  <h1 align="center">Hi, I'm Nima Kelidari 👋</h1>
+  <h3 align="center">AI / ML Engineer | Master's Student at USC</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=nikelroid" alt="nikelroid" /></a> </p>
+  <p align="center">
+    <em>Specializing in Reinforcement Learning, Computer Vision, and Advanced MLOps.</em>
+  </p>
 
-<p align="left"> <a href="https://twitter.com/adivide2" target="blank"><img src="https://img.shields.io/twitter/follow/adivide2?logo=twitter&style=for-the-badge" alt="adivide2" /></a> </p>
+  <p align="center">
+    <a href="https://kelidari.com"><strong>🌐 Portfolio (kelidari.com)</strong></a> •
+    <a href="https://cvdesignr.com/p/61dde78bae076?hl=en_GB"><strong>📄 View CV</strong></a>
+  </p>
 
-- 🔭 I’m currently studying in **University of Southern California**
+  <p align="center">
+    <a href="https://linkedin.com/in/nima-kelidari"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+    <a href="mailto:kelidari.nima@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+    <a href="https://x.com/adivide2"><img src="https://img.shields.io/badge/X-black?style=for-the-badge&logo=x&logoColor=white" /></a>
+  </p>
 
-- 🌱 I’m currently learning **Advanced MLOps , ROC**
+</div>
 
-- 👯 I’m working on **Real-Time AI Vision Assistant with Smart Question-Answer Matching**
+---
 
-- 🤝 I’m looking for help with [Segment Anything in Medical Images](https://github.com/bowang-lab/MedSAM)
+### 🚀 About Me
+[cite_start]I am currently a **Master's student in Computer Science (AI)** at the **University of Southern California (USC)** [cite: 3, 4][cite_start], with a background from **Sharif University of Technology**[cite: 7].
 
-- 👨‍💻 All of my projects are available at [Ripository](https://github.com/Nikelroid?tab=repositories)
+My focus lies at the intersection of **Reinforcement Learning**, **Robotics**, and **Large Scale MLOps**. I have experience building autonomous agents for imperfect-information games and deploying scalable ML pipelines on the cloud.
 
-- 📝 I regularly tweet my attitudes [in my X account](https://twitter.com/adivide2)
+- 🔭 **Current Research:** Adversarial Co-Evolution of RL and VLM/LLM Agents.
+- 🌱 **Learning:** Advanced MLOps, ROC, and Control Theory.
+- 👯 **Looking to collaborate on:** Robotics simulation and Medical Imaging (MedSAM).
+- 💬 **Ask me about:** Deep Reinforcement Learning (PPO), Computer Vision, and MLOps pipelines.
 
-- 💬 Ask me about **Computer Vision, Image Processing**
+---
 
-- 📫 How to reach me **kelidari.nima@gmail.com**
+### 🛠️ Languages & Tools
 
-- 📄 Read about my experiences in [my CV](https://cvdesignr.com/p/61dde78bae076?hl=en_GB)
+<div align="left">
 
-- ⚡ Fun fact **I immigrated started my 2nd semester recently!**
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" />
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://x.com/adivide2" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="adivide2" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/nima-kelidari" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="nima-kelidari" height="30" width="40" /></a>
-<a href="https://instagram.com/nima_kld" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="nima_kld" height="30" width="40" /></a>
+<br />
+
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+<img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" />
+<img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+<img src="https://img.shields.io/badge/Stable_Baselines_3-32CD32?style=for-the-badge" />
+<img src="https://img.shields.io/badge/PettingZoo-FFD700?style=for-the-badge" />
+
+<br />
+
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
+<img src="https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white" />
+<img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white" />
+
+<br />
+
+<img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" />
+<img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" />
+<img src="https://img.shields.io/badge/DVC-945DD6?style=for-the-badge&logo=dvc&logoColor=white" />
+<img src="https://img.shields.io/badge/Comet_ML-1B1E23?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apache-airflow&logoColor=white" />
+<img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" />
+
+<br />
+
+<img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+<img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+
+</div>
+
+---
+
+### 📂 Featured Projects
+
+| Project | Description | Tech Stack |
+| :--- | :--- | :--- |
+| **Adversarial Co-Evolution (RL + LLM)** | Engineered a multi-process **PPO training pipeline** for Gin Rummy agents, using **LLMs for knowledge distillation**. [cite_start]Achieved **99.12% win rate** vs baseline[cite: 26, 27]. | `PyTorch` `SB3` `PettingZoo` `LLMs` |
+| **Hybrid Anime Recommender** | [cite_start]Built a recommendation system processing **80M+ interactions** with an automated **MLOps pipeline** on Google Cloud[cite: 24, 25]. | `TensorFlow` `Docker` `Kubernetes` `Jenkins` `CometML` |
+| **Multi-Modal Sentiment Analysis** | [cite_start]Deployed classification models across text and vision modalities attaining **64.5% accuracy** on real-world mood prediction data[cite: 21, 23]. | `NLP` `LSTM` `Vision Transformers` `Pandas` |
+| **Real-Time AI Vision Assistant** | Developing a smart question-answer matching system using real-time computer vision inputs. | `OpenCV` `YOLO` `PyTorch` |
+
+---
+
+### 📊 GitHub Stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=nikelroid&show_icons=true&theme=radical&hide_border=true&count_private=true" height="150" alt="stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=nikelroid&show_icons=true&locale=en&layout=compact&theme=radical&hide_border=true" height="150" alt="languages" />
+</div>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=nikelroid&label=Profile%20views&color=0e75b6&style=flat" alt="nikelroid" />
 </p>
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nikelroid&show_icons=true&locale=en&layout=compact" alt="nikelroid" /></p>
