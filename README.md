@@ -84,9 +84,9 @@ My focus lies at the intersection of **Reinforcement Learning**, **Robotics**, a
 
 | Project | Description | Tech Stack |
 | :--- | :--- | :--- |
-| [cite_start]**Adversarial Co-Evolution** [cite: 26] | Engineered a multi-process PPO training pipeline for Gin Rummy agents, using LLMs for knowledge distillation. Achieved 99.12% win rate vs baseline. | `PyTorch` `SB3` `PettingZoo` `LLMs` |
-| [cite_start]**Hybrid Anime Recommender** [cite: 24] | Built a recommendation system processing 80M+ interactions with an automated MLOps pipeline on Google Cloud. | `TensorFlow` `Docker` `K8s` `Jenkins` |
-| [cite_start]**Multi-Modal Sentiment Analysis** [cite: 21] | Deployed classification models across text and vision modalities attaining 64.5% accuracy on real-world mood prediction data. | `NLP` `LSTM` `ViT` `Pandas` |
+| [**Adversarial Co-Evolution**]  | Engineered a multi-process PPO training pipeline for Gin Rummy agents, using LLMs for knowledge distillation. Achieved 99.12% win rate vs baseline. | `PyTorch` `SB3` `PettingZoo` `LLMs` |
+| **Hybrid Anime Recommender**  | Built a recommendation system processing 80M+ interactions with an automated MLOps pipeline on Google Cloud. | `TensorFlow` `Docker` `K8s` `Jenkins` |
+| **Multi-Modal Sentiment Analysis**  | Deployed classification models across text and vision modalities attaining 64.5% accuracy on real-world mood prediction data. | `NLP` `LSTM` `ViT` `Pandas` |
 
 ---
 
