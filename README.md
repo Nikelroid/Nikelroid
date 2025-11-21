@@ -21,12 +21,12 @@
 ### 🚀 About Me
 I am currently a **Master's student in Computer Science (AI)** at the **University of Southern California (USC)** , with a background from **Sharif University of Technology**.
 
-My focus lies at the intersection of **Reinforcement Learning**, **Robotics**, and **Large Scale MLOps**. [cite_start]I have experience building autonomous agents for imperfect-information games and deploying scalable ML pipelines on the cloud[cite: 26, 24].
+My focus lies at the intersection of **Reinforcement Learning**, **Robotics**, and **Large Scale MLOps**. [cite_start]I have experience building autonomous agents for imperfect-information games and deploying scalable ML pipelines on the cloud.
 
-- [cite_start]🔭 **Current Research:** Adversarial Co-Evolution of RL and VLM/LLM Agents[cite: 26].
-- [cite_start]🌱 **Learning:** Advanced MLOps, ROC, and Control Theory[cite: 6, 10].
+- 🔭 **Current Research:** Adversarial Co-Evolution of RL and VLM/LLM Agents.
+- 🌱 **Learning:** Advanced MLOps, ROC, and Control Theory.
 - 👯 **Looking to collaborate on:** Robotics simulation and Medical Imaging.
-- [cite_start]💬 **Ask me about:** Deep Reinforcement Learning (PPO), Computer Vision, and MLOps pipelines[cite: 26, 25].
+- 💬 **Ask me about:** Deep Reinforcement Learning (PPO), Computer Vision, and MLOps pipelines.
 
 ---
 
