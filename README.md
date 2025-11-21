@@ -19,7 +19,7 @@
 ---
 
 ### 🚀 About Me
-[cite_start]I am currently a **Master's student in Computer Science (AI)** at the **University of Southern California (USC)** [cite: 3, 4][cite_start], with a background from **Sharif University of Technology**[cite: 7].
+I am currently a **Master's student in Computer Science (AI)** at the **University of Southern California (USC)** , with a background from **Sharif University of Technology**.
 
 My focus lies at the intersection of **Reinforcement Learning**, **Robotics**, and **Large Scale MLOps**. [cite_start]I have experience building autonomous agents for imperfect-information games and deploying scalable ML pipelines on the cloud[cite: 26, 24].
 
