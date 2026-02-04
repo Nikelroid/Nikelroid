@@ -94,10 +94,10 @@ My focus lies at the intersection of **Reinforcement Learning**, **Robotics**, a
 
 <p align="center">
   <!-- Stats (Omsimos) -->
-  <img src="https://github-stats.omsimos.com/api?username=nikelroid&show_icons=true&theme=radical&hide_border=true" height="150" alt="nikelroid GitHub stats (Omsimos)" />
+  <img src="https://github-stats.omsimos.com/api?username=Nikelroid&show_icons=true&theme=radical&hide_border=true" height="150" alt="nikelroid GitHub stats (Omsimos)" />
 
   <!-- Top languages (Omsimos) -->
-  <img src="https://github-stats.omsimos.com/api/top-langs?username=nikelroid&layout=compact&theme=radical&hide_border=true" height="150" alt="Top languages (Omsimos)" />
+  <img src="https://github-stats.omsimos.com/api/top-langs?username=Nikelroid&layout=compact&theme=radical&hide_border=true" height="150" alt="Top languages (Omsimos)" />
 </p>
 
 <p align="center">
