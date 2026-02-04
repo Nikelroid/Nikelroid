@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="150">
+  <style>.bg{fill:#0b1020} .txt{font-family:Segoe UI, Arial; fill:#fff}</style>
+  <rect rx="10" width="100%" height="100%" class="bg"/>
+  <g class="txt" font-size="14"><text x="20" y="30">Jupyter Notebook: 94%</text><text x="20" y="50">Java: 3%</text><text x="20" y="70">Python: 1%</text><text x="20" y="90">Cuda: 0%</text><text x="20" y="110">HTML: 0%</text><text x="20" y="130">Kotlin: 0%</text></g>
+</svg>
