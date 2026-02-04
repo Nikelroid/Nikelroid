@@ -26,27 +26,30 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Generate prettier SVGs
+      - name: Create Python script
         env:
           USERNAME: nikelroid
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python - <<'PY'
-          import os, requests, math
-
+          cat > generate_stats.py <<'PY'
+          #!/usr/bin/env python3
+          import os, requests, math, sys
           token = os.getenv("GITHUB_TOKEN")
           user = os.getenv("USERNAME") or "nikelroid"
           headers = {"Authorization": f"token {token}"} if token else {}
           s = requests.Session()
           s.headers.update(headers)
 
-          # fetch user info
-          u_resp = s.get(f"https://api.github.com/users/{user}")
-          if u_resp.status_code != 200:
-            print("Warning: failed to fetch user info", u_resp.status_code)
+          def esc(t):
+            return str(t).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+          # fetch user
+          try:
+            u_resp = s.get(f"https://api.github.com/users/{user}", timeout=30)
+            u = u_resp.json() if u_resp.status_code == 200 else {}
+          except Exception as e:
+            print("Failed fetching user:", e, file=sys.stderr)
             u = {}
-          else:
-            u = u_resp.json()
           followers = u.get("followers", 0)
           public_repos = u.get("public_repos", 0)
 
@@ -54,7 +57,11 @@ jobs:
           repos = []
           page = 1
           while True:
-            r = s.get(f"https://api.github.com/users/{user}/repos?per_page=100&page={page}")
+            try:
+              r = s.get(f"https://api.github.com/users/{user}/repos?per_page=100&page={page}", timeout=30)
+            except Exception as e:
+              print("Failed fetching repos page", page, e, file=sys.stderr)
+              break
             if r.status_code != 200:
               break
             data = r.json()
@@ -63,17 +70,16 @@ jobs:
             repos.extend(data)
             page += 1
 
-          # compute stars
           stars = sum(repo.get("stargazers_count", 0) for repo in repos)
 
-          # aggregate language bytes
+          # languages
           lang_bytes = {}
           for repo in repos:
             url = repo.get("languages_url")
             if not url:
               continue
             try:
-              rr = s.get(url)
+              rr = s.get(url, timeout=20)
               if rr.status_code != 200:
                 continue
               L = rr.json()
@@ -82,18 +88,13 @@ jobs:
             except Exception:
               continue
 
-          # sanitize helper
-          def esc(t):
-            return str(t).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-
-          # generate stats SVG
+          # Stats SVG (polished)
           width = 700
           height = 170
           card_radius = 14
           accent = "#7c5cff"
           text_color = "#eef2ff"
           muted = "#9aa4b2"
-
           stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="GitHub stats">
   <defs>
     <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
@@ -132,7 +133,7 @@ jobs:
           with open("github-stats.svg", "w", encoding="utf-8") as f:
             f.write(stats_svg)
 
-          # generate top-langs SVG
+          # Top languages SVG
           sorted_langs = sorted(lang_bytes.items(), key=lambda x: -x[1])
           top = sorted_langs[:6]
           total = sum(lang_bytes.values()) or 1
@@ -181,6 +182,10 @@ jobs:
 
           print("Generated pretty github-stats.svg and top-langs.svg")
           PY
+
+      - name: Run the script
+        run: |
+          python generate_stats.py
 
       - name: Commit and push generated SVGs
         run: |
