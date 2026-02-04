@@ -3,7 +3,7 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * *'  # daily at 06:00 UTC
+    - cron: '0 6 * * *'
 
 permissions:
   contents: write
@@ -11,6 +11,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,19 +32,25 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python - <<'PY'
-          import os, requests, math, json
+          import os, requests, math
+
           token = os.getenv("GITHUB_TOKEN")
           user = os.getenv("USERNAME") or "nikelroid"
           headers = {"Authorization": f"token {token}"} if token else {}
           s = requests.Session()
           s.headers.update(headers)
 
-          # --- fetch user info
-          u = s.get(f"https://api.github.com/users/{user}").json()
+          # fetch user info
+          u_resp = s.get(f"https://api.github.com/users/{user}")
+          if u_resp.status_code != 200:
+            print("Warning: failed to fetch user info", u_resp.status_code)
+            u = {}
+          else:
+            u = u_resp.json()
           followers = u.get("followers", 0)
           public_repos = u.get("public_repos", 0)
 
-          # --- fetch repos (paginated)
+          # fetch repos (paginated)
           repos = []
           page = 1
           while True:
@@ -53,13 +60,13 @@ jobs:
             data = r.json()
             if not data:
               break
-            repos += data
+            repos.extend(data)
             page += 1
 
-          # --- compute stars
+          # compute stars
           stars = sum(repo.get("stargazers_count", 0) for repo in repos)
 
-          # --- aggregate language bytes
+          # aggregate language bytes
           lang_bytes = {}
           for repo in repos:
             url = repo.get("languages_url")
@@ -67,7 +74,7 @@ jobs:
               continue
             try:
               rr = s.get(url)
-              if rr.status_code != 200: 
+              if rr.status_code != 200:
                 continue
               L = rr.json()
               for k, v in L.items():
@@ -75,16 +82,15 @@ jobs:
             except Exception:
               continue
 
-          # --- helper: sanitize text for XML
+          # sanitize helper
           def esc(t):
-            return (str(t).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+            return str(t).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-          # --- generate stats SVG (polished layout)
+          # generate stats SVG
           width = 700
           height = 170
           card_radius = 14
-          bg_color = "#0b1020"
-          accent = "#7c5cff"  # accent color
+          accent = "#7c5cff"
           text_color = "#eef2ff"
           muted = "#9aa4b2"
 
@@ -101,14 +107,12 @@ jobs:
 
   <rect width="100%" height="100%" rx="{card_radius}" fill="url(#g1)" filter="url(#s)"/>
 
-  <!-- left icon block -->
   <rect x="20" y="20" width="120" height="{height-40}" rx="10" fill="{accent}" opacity="0.12"/>
   <g transform="translate(32,42)">
     <circle cx="26" cy="0" r="22" fill="{accent}" opacity="0.95"/>
     <text x="26" y="6" font-family="Segoe UI, Roboto, Arial" font-weight="700" font-size="18" text-anchor="middle" fill="#ffffff">GH</text>
   </g>
 
-  <!-- right content -->
   <g transform="translate(160,30)" font-family="Segoe UI, Roboto, Arial">
     <text x="0" y="14" font-size="14" fill="{muted}">GitHub • {esc(user)}</text>
 
@@ -116,7 +120,6 @@ jobs:
     <text x="260" y="48" font-size="20" fill="{text_color}" font-weight="700">Public repos: {esc(public_repos)}</text>
     <text x="0" y="84" font-size="20" fill="{text_color}" font-weight="700">Total stars: {esc(stars)}</text>
 
-    <!-- small badges -->
     <g transform="translate(0,102)">
       <rect x="0" y="0" rx="8" width="160" height="30" fill="#0f1724" stroke="#111827" />
       <text x="16" y="20" font-size="13" fill="{muted}">Auto-generated</text>
@@ -129,11 +132,10 @@ jobs:
           with open("github-stats.svg", "w", encoding="utf-8") as f:
             f.write(stats_svg)
 
-          # --- generate top-langs SVG (bars + percentages)
+          # generate top-langs SVG
           sorted_langs = sorted(lang_bytes.items(), key=lambda x: -x[1])
           top = sorted_langs[:6]
           total = sum(lang_bytes.values()) or 1
-          # visual layout
           w = 700
           left_pad = 24
           top_pad = 22
@@ -141,8 +143,6 @@ jobs:
           rows = max(1, len(top))
           h = top_pad*2 + rows*row_h + 20
           bar_max_w = w - 260
-
-          # palette (nice colors)
           palette = ["#7c5cff", "#00d4ff", "#ff7ac6", "#ffd166", "#73e58b", "#9fb4ff"]
           lines = []
           for i, (lang, b) in enumerate(top):
@@ -152,32 +152,28 @@ jobs:
             bar_w = max(2, int((b / total) * bar_max_w))
             y = top_pad + i*row_h
             lines.append(f'<text x="{left_pad}" y="{y+16}" font-size="14" fill="{text_color}" font-family="Segoe UI, Roboto, Arial">{esc(lang)}</text>')
-            # percentage on right
             lines.append(f'<text x="{left_pad + bar_max_w + 100}" y="{y+16}" font-size="14" fill="{muted}" font-family="Segoe UI, Roboto, Arial">{pct_text}</text>')
-            # bar background
             lines.append(f'<rect x="{left_pad+120}" y="{y+4}" width="{bar_max_w}" height="18" rx="9" fill="#0f1724" />')
-            # bar fill
             lines.append(f'<rect x="{left_pad+120}" y="{y+4}" width="{bar_w}" height="18" rx="9" fill="{color}" />')
 
           if not lines:
             lines.append(f'<text x="{left_pad}" y="{top_pad+16}" font-size="14" fill="{text_color}" font-family="Segoe UI, Roboto, Arial">No languages detected</text>')
 
+          joined_lines = "".join(lines)
           lang_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Top languages">
-  <rect width="100%" height="100%" rx="12" fill="url(#g2)"/>
   <defs>
     <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#0f1724"/>
       <stop offset="1" stop-color="#071021"/>
     </linearGradient>
   </defs>
-
+  <rect width="100%" height="100%" rx="12" fill="url(#g2)"/>
   <g transform="translate(0,0)">
     <text x="24" y="22" font-size="16" font-family="Segoe UI, Roboto, Arial" fill="{text_color}" font-weight="700">Top languages</text>
     <text x="24" y="42" font-size="12" font-family="Segoe UI, Roboto, Arial" fill="{muted}">By bytes across public repos</text>
   </g>
-
   <g transform="translate(0,0)">
-    {''.join(lines)}
+    {joined_lines}
   </g>
 </svg>'''
           with open("top-langs.svg", "w", encoding="utf-8") as f:
