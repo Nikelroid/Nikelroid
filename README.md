@@ -93,8 +93,8 @@ My focus lies at the intersection of **Reinforcement Learning**, **Robotics**, a
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://gh-stats-gen.vercel.app/api?username=nikelroid&theme=radical" />
-  <img src="https://gh-stats-gen.vercel.app/api/top-langs?username=nikelroid&theme=radical" />
+  <img src="https://github-readme-stats.vercel.app/api?username=nikelroid&show_icons=true&theme=radical&hide_border=true" height="150" alt="nikelroid GitHub stats (public only)" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=nikelroid&show_icons=true&locale=en&layout=compact&theme=radical&hide_border=true" height="150" alt="Top languages (public only)" />
 </p>
 
 <p align="center">
