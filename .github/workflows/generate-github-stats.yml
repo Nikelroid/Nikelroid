@@ -1,4 +1,4 @@
-name: Generate Pretty GitHub Stats SVGs
+name: Generate GitHub Stats SVGs
 on:
   push:
   workflow_dispatch:
@@ -11,7 +11,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,171 +25,72 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Create Python script
+      - name: Generate SVGs
         env:
           USERNAME: nikelroid
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cat > generate_stats.py <<'PY'
-          #!/usr/bin/env python3
-          import os, requests, math, sys
+          python - <<'PY'
+          import os, requests
           token = os.getenv("GITHUB_TOKEN")
-          user = os.getenv("USERNAME") or "nikelroid"
+          user = os.getenv("USERNAME")
           headers = {"Authorization": f"token {token}"} if token else {}
           s = requests.Session()
           s.headers.update(headers)
 
-          def esc(t):
-            return str(t).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-
-          # fetch user
-          try:
-            u_resp = s.get(f"https://api.github.com/users/{user}", timeout=30)
-            u = u_resp.json() if u_resp.status_code == 200 else {}
-          except Exception as e:
-            print("Failed fetching user:", e, file=sys.stderr)
-            u = {}
+          u = s.get(f"https://api.github.com/users/{user}").json()
           followers = u.get("followers", 0)
           public_repos = u.get("public_repos", 0)
 
-          # fetch repos (paginated)
-          repos = []
-          page = 1
+          repos, page = [], 1
           while True:
-            try:
-              r = s.get(f"https://api.github.com/users/{user}/repos?per_page=100&page={page}", timeout=30)
-            except Exception as e:
-              print("Failed fetching repos page", page, e, file=sys.stderr)
+            r = s.get(f"https://api.github.com/users/{user}/repos?per_page=100&page={page}").json()
+            if not r:
               break
-            if r.status_code != 200:
-              break
-            data = r.json()
-            if not data:
-              break
-            repos.extend(data)
+            repos += r
             page += 1
 
           stars = sum(repo.get("stargazers_count", 0) for repo in repos)
 
-          # languages
           lang_bytes = {}
           for repo in repos:
             url = repo.get("languages_url")
             if not url:
               continue
-            try:
-              rr = s.get(url, timeout=20)
-              if rr.status_code != 200:
-                continue
-              L = rr.json()
-              for k, v in L.items():
-                lang_bytes[k] = lang_bytes.get(k, 0) + v
-            except Exception:
-              continue
+            for k, v in s.get(url).json().items():
+              lang_bytes[k] = lang_bytes.get(k, 0) + v
 
-          # Stats SVG (polished)
-          width = 700
-          height = 170
-          card_radius = 14
-          accent = "#7c5cff"
-          text_color = "#eef2ff"
-          muted = "#9aa4b2"
-          stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="GitHub stats">
-  <defs>
-    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#0f1724"/>
-      <stop offset="1" stop-color="#071021"/>
-    </linearGradient>
-    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.55"/>
-    </filter>
-  </defs>
+          stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="540" height="120">
+            <style>.bg{{fill:#0b1020}} .txt{{font-family:Segoe UI, Arial; fill:#fff}}</style>
+            <rect rx="10" width="100%" height="100%" class="bg"/>
+            <g class="txt" font-size="16">
+              <text x="20" y="35">Followers: {followers}</text>
+              <text x="20" y="60">Public repos: {public_repos}</text>
+              <text x="20" y="85">Total stars: {stars}</text>
+            </g>
+          </svg>'''
+          open("github-stats.svg", "w").write(stats_svg)
 
-  <rect width="100%" height="100%" rx="{card_radius}" fill="url(#g1)" filter="url(#s)"/>
-
-  <rect x="20" y="20" width="120" height="{height-40}" rx="10" fill="{accent}" opacity="0.12"/>
-  <g transform="translate(32,42)">
-    <circle cx="26" cy="0" r="22" fill="{accent}" opacity="0.95"/>
-    <text x="26" y="6" font-family="Segoe UI, Roboto, Arial" font-weight="700" font-size="18" text-anchor="middle" fill="#ffffff">GH</text>
-  </g>
-
-  <g transform="translate(160,30)" font-family="Segoe UI, Roboto, Arial">
-    <text x="0" y="14" font-size="14" fill="{muted}">GitHub • {esc(user)}</text>
-
-    <text x="0" y="48" font-size="20" fill="{text_color}" font-weight="700">Followers: {esc(followers)}</text>
-    <text x="260" y="48" font-size="20" fill="{text_color}" font-weight="700">Public repos: {esc(public_repos)}</text>
-    <text x="0" y="84" font-size="20" fill="{text_color}" font-weight="700">Total stars: {esc(stars)}</text>
-
-    <g transform="translate(0,102)">
-      <rect x="0" y="0" rx="8" width="160" height="30" fill="#0f1724" stroke="#111827" />
-      <text x="16" y="20" font-size="13" fill="{muted}">Auto-generated</text>
-
-      <rect x="180" y="0" rx="8" width="200" height="30" fill="#0f1724" stroke="#111827" />
-      <text x="196" y="20" font-size="13" fill="{muted}">Updated by GitHub Actions</text>
-    </g>
-  </g>
-</svg>'''
-          with open("github-stats.svg", "w", encoding="utf-8") as f:
-            f.write(stats_svg)
-
-          # Top languages SVG
-          sorted_langs = sorted(lang_bytes.items(), key=lambda x: -x[1])
-          top = sorted_langs[:6]
           total = sum(lang_bytes.values()) or 1
-          w = 700
-          left_pad = 24
-          top_pad = 22
-          row_h = 30
-          rows = max(1, len(top))
-          h = top_pad*2 + rows*row_h + 20
-          bar_max_w = w - 260
-          palette = ["#7c5cff", "#00d4ff", "#ff7ac6", "#ffd166", "#73e58b", "#9fb4ff"]
-          lines = []
-          for i, (lang, b) in enumerate(top):
-            pct = (b / total) * 100
-            pct_text = f"{pct:.0f}%"
-            color = palette[i % len(palette)]
-            bar_w = max(2, int((b / total) * bar_max_w))
-            y = top_pad + i*row_h
-            lines.append(f'<text x="{left_pad}" y="{y+16}" font-size="14" fill="{text_color}" font-family="Segoe UI, Roboto, Arial">{esc(lang)}</text>')
-            lines.append(f'<text x="{left_pad + bar_max_w + 100}" y="{y+16}" font-size="14" fill="{muted}" font-family="Segoe UI, Roboto, Arial">{pct_text}</text>')
-            lines.append(f'<rect x="{left_pad+120}" y="{y+4}" width="{bar_max_w}" height="18" rx="9" fill="#0f1724" />')
-            lines.append(f'<rect x="{left_pad+120}" y="{y+4}" width="{bar_w}" height="18" rx="9" fill="{color}" />')
+          top = sorted(lang_bytes.items(), key=lambda x: -x[1])[:6]
+          y, lines = 30, []
+          for lang, b in top:
+            pct = round((b / total) * 100)
+            lines.append(f'<text x="20" y="{y}">{lang}: {pct}%</text>')
+            y += 20
 
-          if not lines:
-            lines.append(f'<text x="{left_pad}" y="{top_pad+16}" font-size="14" fill="{text_color}" font-family="Segoe UI, Roboto, Arial">No languages detected</text>')
-
-          joined_lines = "".join(lines)
-          lang_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Top languages">
-  <defs>
-    <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#0f1724"/>
-      <stop offset="1" stop-color="#071021"/>
-    </linearGradient>
-  </defs>
-  <rect width="100%" height="100%" rx="12" fill="url(#g2)"/>
-  <g transform="translate(0,0)">
-    <text x="24" y="22" font-size="16" font-family="Segoe UI, Roboto, Arial" fill="{text_color}" font-weight="700">Top languages</text>
-    <text x="24" y="42" font-size="12" font-family="Segoe UI, Roboto, Arial" fill="{muted}">By bytes across public repos</text>
-  </g>
-  <g transform="translate(0,0)">
-    {joined_lines}
-  </g>
-</svg>'''
-          with open("top-langs.svg", "w", encoding="utf-8") as f:
-            f.write(lang_svg)
-
-          print("Generated pretty github-stats.svg and top-langs.svg")
+          lang_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="540" height="{y}">
+            <style>.bg{{fill:#0b1020}} .txt{{font-family:Segoe UI, Arial; fill:#fff}}</style>
+            <rect rx="10" width="100%" height="100%" class="bg"/>
+            <g class="txt" font-size="14">{''.join(lines)}</g>
+          </svg>'''
+          open("top-langs.svg", "w").write(lang_svg)
           PY
 
-      - name: Run the script
-        run: |
-          python generate_stats.py
-
-      - name: Commit and push generated SVGs
+      - name: Commit and push SVGs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add github-stats.svg top-langs.svg
-          git commit -m "chore: update pretty GitHub stats SVGs" || echo "No changes to commit"
+          git commit -m "Update GitHub stats SVGs" || echo "No changes"
           git push
