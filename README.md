@@ -93,8 +93,9 @@ My focus lies at the intersection of **Reinforcement Learning**, **Robotics**, a
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="./github-stats.svg" height="150" />
-  <img src="./top-langs.svg" height="150" />
+  <img src="./github-stats.svg" alt="GitHub stats" width="700" />
+  <br/>
+  <img src="./top-langs.svg" alt="Top languages" width="700" />
 </p>
 
 <p align="center">
