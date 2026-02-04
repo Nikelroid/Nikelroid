@@ -86,16 +86,16 @@ My focus lies at the intersection of **Reinforcement Learning**, **Robotics**, a
 | :--- | :--- | :--- |
 | [**Adversarial Co-Evolution**](https://github.com/Nikelroid/adversarial-coevolution)  | Engineered a multi-process PPO training pipeline for Gin Rummy agents, using LLMs for knowledge distillation. Achieved 99.12% win rate vs baseline. | `PyTorch` `SB3` `PettingZoo` `LLMs` |
 | [**Hybrid Anime Recommender**](https://github.com/Nikelroid/anime-recommender-application)  | Built a recommendation system processing 80M+ interactions with an automated MLOps pipeline on Google Cloud. | `TensorFlow` `Docker` `K8s` `Jenkins` |
-| [**Multi-Modal Sentiment Analysis**](multimodal-sentiment-classification)  | Deployed classification models across text and vision modalities attaining 64.5% accuracy on real-world mood prediction data. | `NLP` `LSTM` `ViT` `Pandas` |
+| [**Multi-Modal Sentiment Analysis**](multimodal-sentiment-classification)  | Deployed classification models across text and vision modalities, attaining 64.5% accuracy on real-world mood prediction data. | `NLP` `LSTM` `ViT` `Pandas` |
 
 ---
 
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="./github-stats.svg" alt="GitHub stats" width="700" />
+  <img src="./github-stats.svg" alt="GitHub stats" width="150" />
   <br/>
-  <img src="./top-langs.svg" alt="Top languages" width="700" />
+  <img src="./top-langs.svg" alt="Top languages" width="150" />
 </p>
 
 <p align="center">
