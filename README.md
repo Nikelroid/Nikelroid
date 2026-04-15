@@ -84,9 +84,10 @@ My focus lies at the intersection of **Reinforcement Learning**, **Robotics**, a
 
 | Project | Description | Tech Stack |
 | :--- | :--- | :--- |
-| [**Adversarial Co-Evolution**](https://github.com/Nikelroid/adversarial-coevolution)  | Engineered a multi-process PPO training pipeline for Gin Rummy agents, using LLMs for knowledge distillation. Achieved 99.12% win rate vs baseline. | `PyTorch` `SB3` `PettingZoo` `LLMs` |
-| [**Hybrid Anime Recommender**](https://github.com/Nikelroid/anime-recommender-application)  | Built a recommendation system processing 80M+ interactions with an automated MLOps pipeline on Google Cloud. | `TensorFlow` `Docker` `K8s` `Jenkins` |
-| [**Multi-Modal Sentiment Analysis**](multimodal-sentiment-classification)  | Deployed classification models across text and vision modalities, attaining 64.5% accuracy on real-world mood prediction data. | `NLP` `LSTM` `ViT` `Pandas` |
+| [**Risk-Scaled Steering in MoE**](https://github.com/adsrivatsa/llm-steering) | Developed token-aware steering for MoE language models using 3D delta tensors to dynamically scale expert activations for improved safety at inference. | `Python` `vLLM` `PyTorch` `HuggingFace` |
+| [**Linguistic-Agnostic SER**](https://github.com/Nikelroid/linguistic-agnostic-ser) | Probing framework for Speech Emotion Recognition transformers to evaluate paralinguistic and acoustic knowledge encoding across hidden layers. | `Python` `PyTorch` `HuggingFace` |
+| [**Adversarial Co-Evolution**](https://github.com/Nikelroid/adversarial-coevolution) | Framework training high-performance PPO agents against LLMs in card games using curriculum learning and knowledge distillation. | `Python` `Ollama` `PPO` |
+| [**Multi-Modal Sentiment Classification**](https://www.google.com/search?q=multimodal-sentiment-classification) | Tool for multi-modal sentiment analysis and time dynamics exploration within image-text conversations. | `Python` `Pandas` `PyTorch` |
 
 ---
 
