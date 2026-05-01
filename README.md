@@ -97,16 +97,12 @@ I'm a Master's student in **Computer Science (AI) at USC**, with a BS from **Sha
 ### 📊 GitHub
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Nikelroid&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nikelroid&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="165" />
+  <img src="https://github-readme-stats.hackclub.dev/api?username=Nikelroid&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&card_width=440&hide_rank=false" height="170" />
+  <img src="https://github-readme-stats.hackclub.dev/api/top-langs/?username=Nikelroid&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=320" height="170" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Nikelroid&theme=tokyonight&hide_border=true" height="165" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Nikelroid&theme=tokyonight&no-frame=true&column=7&margin-w=8" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Nikelroid&theme=tokyo-night&hide_border=true&area=true&radius=8" width="780" />
 </p>
 
 <p align="center">
