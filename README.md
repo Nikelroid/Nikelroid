@@ -14,7 +14,7 @@
 ## 🎓 About Me
 
 - 🔭 **MS in Computer Science (AI)** at **USC Viterbi**, finishing Dec 2026 (GPA 3.55)
-- 🎓 **BS in Computer Science** from **Sharif University of Technology**
+- 🎓 **BS in Computer Science** from **Sharif University of Technology** (**Aryamehr University of Technology**)
 - 🧪 Running three concurrent research projects with USC NLP, USC SAIL, and Yan Liu's lab
 - 💼 Open to **summer research** and **PhD positions for Fall 2027**
 - 📍 Los Angeles, CA
