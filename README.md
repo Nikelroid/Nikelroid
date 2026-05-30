@@ -1,109 +1,71 @@
-<h1 align="center">Hi, I'm Nima Kelidari 👋</h1>
-<h3 align="center">AI / ML Engineer · MS Computer Science (AI) @ USC</h3>
+# Hi, I'm Nima Kelidari
 
-<p align="center">
-  <em>Reinforcement Learning · Computer Vision · Large-Scale MLOps</em>
-</p>
+Master's student in Computer Science (Artificial Intelligence) at the **University of Southern California**, Viterbi School of Engineering. Previously a CS undergrad at the **Sharif University of Technology**. Based in Los Angeles, CA.
 
-<p align="center">
-  <a href="https://kelidari.com"><strong>🌐 Portfolio</strong></a> •
-  <a href="https://cvdesignr.com/p/61dde78bae076?hl=en_GB"><strong>📄 CV</strong></a> •
-  <a href="https://linkedin.com/in/nima-kelidari"><strong>💼 LinkedIn</strong></a> •
-  <a href="mailto:kelidari.nima@gmail.com"><strong>✉️ Email</strong></a>
-</p>
-
-<p align="center">
-  <a href="https://linkedin.com/in/nima-kelidari"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:kelidari.nima@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://x.com/adivide2"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
-</p>
+I work on efficient and interpretable methods for **large language models, multimodal learning, and robot learning**, with a particular interest in inference-time interventions and reproducible ML infrastructure.
 
 ---
 
-### 🚀 About Me
+## Current research
 
-I'm a Master's student in **Computer Science (AI) at USC**, with a BS from **Sharif University of Technology**. I build agents that learn under uncertainty and ship them on infrastructure that scales.
+I am running three concurrent projects at USC:
 
-- 🔭 **Researching:** adversarial co-evolution of RL and VLM/LLM agents
-- 🛠️ **Recently shipped:** PPO agents for imperfect-information games, MoE steering at inference time, probing frameworks for speech transformers
-- 🌱 **Learning:** ROS, control theory, advanced MLOps
-- 🤝 **Open to collaborate on:** robotics simulation, medical imaging
-- 💬 **Ask me about:** PPO and offline RL, computer vision, MLOps pipelines on GCP/AWS
+### 3D-DELTA — Learned low-rank steering head for Mixture-of-Experts LLMs
+*With Profs. Robin Jia and Xuezhe Ma*
 
----
+A 50-thousand-parameter learned low-rank head that replaces SteerMoE's hand-engineered statistic for routing intervention on OLMoE-1B-7B. Beats SteerMoE (ICML 2026) by **+0.101 mean across six faithfulness benchmarks**, with **+0.288 on FaithEval-Inconsistent**. Manuscript in preparation.
 
-### 🛠️ Tech Stack
+[Repository](https://github.com/Nikelroid/moe-steering-3d-delta)
 
-**Languages**
-<br>
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-<img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" />
+### Adversarial Co-Evolution of RL and LLM Agents
+*With Prof. Yan Liu*
 
-**ML & Deep Learning**
-<br>
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-<img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" />
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-<img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
-<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+A distributed multi-core PPO training pipeline with a custom three-phase curriculum (Random → Self-Play → Adversarial), reaching a **99.12% win rate** against baseline agents on Gin Rummy. The system includes a Master-Worker inference engine that distills strategic knowledge from Llama-3, Gemma, and GPT-OSS into compact reinforcement-learning policies.
 
-**RL & Simulation** &nbsp; <sub>Stable-Baselines3 · PettingZoo · Gymnasium · Ollama · vLLM</sub>
+[Repository](https://github.com/nikelroid/adversarial-coevolution)
 
-**Data**
-<br>
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-<img src="https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white" />
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" />
+### Linguistic-Agnostic Speech Emotion Recognition
+*With Prof. Mohammad Soleymani, USC SAIL*
 
-**MLOps & Cloud**
-<br>
-<img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
-<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
-<img src="https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apache-airflow&logoColor=white" />
-<img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" />
-<img src="https://img.shields.io/badge/DVC-945DD6?style=for-the-badge&logo=dvc&logoColor=white" />
-<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" />
+An MLOps probing framework in PyTorch and HuggingFace evaluating six pretrained speech encoders (Wav2Vec2, HuBERT, WavLM, XLS-R, and related models) across eight emotion-recognition datasets via SLURM, with a FastAPI / JavaScript dashboard for real-time layer-wise paralinguistic analysis.
 
-**Storage & Systems**
-<br>
-<img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-<img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+[Repository](https://github.com/nikelroid/linguistic-agnostic-ser)
 
 ---
 
-### 📂 Featured Projects
+## Research interests
 
-| Project | What it does | Stack |
-| :--- | :--- | :--- |
-| [**Risk-Scaled Steering in MoE**](https://github.com/adsrivatsa/llm-steering) | Token-aware steering for MoE LLMs — 3D delta tensors that dynamically scale expert activations to improve safety at inference time. | `vLLM` `PyTorch` `HF` |
-| [**Linguistic-Agnostic SER**](https://github.com/Nikelroid/linguistic-agnostic-ser) | Probing framework that measures how speech-emotion transformers encode paralinguistic vs. acoustic information across hidden layers. | `PyTorch` `HF` |
-| [**Adversarial Co-Evolution**](https://github.com/Nikelroid/adversarial-coevolution) | Trains PPO agents against LLM opponents in imperfect-information card games via curriculum learning and knowledge distillation. | `PPO` `Ollama` |
-| [**Multi-Modal Sentiment Classification**](https://github.com/Nikelroid) | Sentiment analysis over image-text conversations with time-dynamics exploration of multimodal cues. | `PyTorch` `Pandas` |
-
-> Replace the last row's link with the real repo URL — the original pointed to a Google search.
+- Inference-time methods and parameter-efficient interventions for large language models
+- Mixture-of-Experts routing and steering
+- Multimodal learning (vision, language, speech)
+- Robot learning and manipulation
+- MLOps, benchmarking, and reproducible ML infrastructure
 
 ---
 
-### 📊 GitHub
+## Selected other projects
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Nikelroid&theme=tokyonight&hide_border=true" height="165" />
-</p>
+- **[Multi-Modal Sentiment Classification](https://github.com/Nikelroid/Multi-Modal-Sentiment-Classification)** — A multimodal fusion network integrating RoBERTa, ViT, and wav2vec2 for joint text–vision–audio sentiment prediction. Includes a FastAPI deployment.
+- **MLOps Pipelines (3 projects)** — Production-style ML pipelines built with Docker, Jenkins, and Weights & Biases.
+- **QA-image** — A native iOS app paired with a Dockerized Python backend deployed on Google Cloud.
+- **Sharif undergraduate research** — Ten months with Dr. Tefagh on Computer Vision and Generative AI methods using Vision Transformers and 3D Convolutional Neural Networks.
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Nikelroid&theme=tokyonight&no-frame=true&column=7&margin-w=8&title=-Stars" />
-</p>
+---
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=nikelroid&label=Profile%20views&color=0e75b6&style=flat" />
-</p>
+## Tools and stack
+
+**Languages:** Python · Java · SQL · C++ · R
+**ML / DL:** PyTorch · HuggingFace · TensorFlow · scikit-learn · OpenCV
+**LLM / NLP:** Mixture-of-Experts (OLMoE, Mixtral, Qwen3, Phi-3.5-MoE), Llama-3, vLLM, contrastive activation probing
+**Reinforcement Learning:** Stable Baselines 3 · PettingZoo · custom curriculum learning
+**Infrastructure:** SLURM · Docker · Kubernetes · Jenkins · MLflow · Weights & Biases · FastAPI
+**Data:** MySQL · MongoDB · PostgreSQL · Redis · DVC · Apache Airflow
+**Cloud:** Google Cloud · AWS
+
+---
+
+## Contact
+
+- Website: [kelidari.com](https://kelidari.com)
+- Email: [kelidari@usc.edu](mailto:kelidari@usc.edu)
+- LinkedIn: [nima-kelidari](https://linkedin.com/in/nima-kelidari)
