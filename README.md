@@ -97,10 +97,6 @@ MLOps probing framework in PyTorch + HuggingFace over **six pretrained speech en
   </a>
 </p>
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Nikelroid&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
-
 ---
 
 ## 📫 Get in Touch
