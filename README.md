@@ -101,7 +101,7 @@ I'm a Master's student in **Computer Science (AI) at USC**, with a BS from **Sha
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Nikelroid&theme=tokyonight&no-frame=true&column=7&margin-w=8" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Nikelroid&theme=tokyonight&no-frame=true&column=7&margin-w=8&title=-Stars" />
 </p>
 
 <p align="center">
