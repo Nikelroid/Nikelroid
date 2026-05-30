@@ -91,16 +91,14 @@ MLOps probing framework in PyTorch + HuggingFace over **six pretrained speech en
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Nikelroid&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nikelroid&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+  <a href="https://github.com/Nikelroid">
+    <img height="180em" src="https://github-readme-stats-lilac-nu-21.vercel.app/api?username=Nikelroid&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="Nima's GitHub Stats" />
+    <img height="180em" src="https://github-readme-stats-lilac-nu-21.vercel.app/api/top-langs/?username=Nikelroid&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Nikelroid&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Nikelroid&theme=tokyonight&no-frame=true&row=1&column=7" />
+  <img src="https://streak-stats.demolab.com?user=Nikelroid&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
 
 ---
