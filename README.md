@@ -1,110 +1,116 @@
-<h1 align="center">Hi, I'm Nima Kelidari 👋</h1>
-<h3 align="center">AI / ML Engineer · MS Computer Science (AI) @ USC</h3>
+<h1 align="center">Hi 👋, I'm Nima Kelidari</h1>
+<h3 align="center">MS in Computer Science (AI) @ USC Viterbi</h3>
+<h4 align="center">Large Language Models · Multimodal Learning · Robot Learning</h4>
 
 <p align="center">
-  <em>Reinforcement Learning · Computer Vision · Large-Scale MLOps</em>
-</p>
-
-<p align="center">
-  <a href="https://kelidari.com"><strong>🌐 Portfolio</strong></a> •
-  <a href="https://cvdesignr.com/p/61dde78bae076?hl=en_GB"><strong>📄 CV</strong></a> •
-  <a href="https://linkedin.com/in/nima-kelidari"><strong>💼 LinkedIn</strong></a> •
-  <a href="mailto:kelidari.nima@gmail.com"><strong>✉️ Email</strong></a>
-</p>
-
-<p align="center">
-  <a href="https://linkedin.com/in/nima-kelidari"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:kelidari.nima@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://x.com/adivide2"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
+  <a href="https://kelidari.com"><img src="https://img.shields.io/badge/Website-kelidari.com-1e90ff?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
+  <a href="mailto:kelidari@usc.edu"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
+  <a href="https://linkedin.com/in/nima-kelidari"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <img src="https://komarev.com/ghpvc/?username=Nikelroid&label=Profile%20Views&color=0e75b6&style=for-the-badge">
 </p>
 
 ---
 
-### 🚀 About Me
+## 🎓 About Me
 
-I'm a Master's student in **Computer Science (AI) at USC**, with a BS from **Sharif University of Technology**. I build agents that learn under uncertainty and ship them on infrastructure that scales.
-
-- 🔭 **Researching:** adversarial co-evolution of RL and VLM/LLM agents
-- 🛠️ **Recently shipped:** PPO agents for imperfect-information games, MoE steering at inference time, probing frameworks for speech transformers
-- 🌱 **Learning:** ROS, control theory, advanced MLOps
-- 🤝 **Open to collaborate on:** robotics simulation, medical imaging
-- 💬 **Ask me about:** PPO and offline RL, computer vision, MLOps pipelines on GCP/AWS
+- 🔭 **MS in Computer Science (AI)** at **USC Viterbi**, finishing Dec 2026 (GPA 3.55)
+- 🎓 **BS in Computer Science** from **Sharif University of Technology**
+- 🧪 Running three concurrent research projects with USC NLP, USC SAIL, and Yan Liu's lab
+- 💼 Open to **summer research** and **PhD positions for Fall 2027**
+- 📍 Los Angeles, CA
 
 ---
 
-### 🛠️ Tech Stack
+## 🔬 Current Research
+
+### 🧠 [3D-DELTA — Learned Low-Rank Steering for MoE LLMs](https://github.com/Nikelroid/moe-steering-3d-delta)
+*With Profs. Robin Jia & Xuezhe Ma · USC NLP*
+
+A **50K-parameter** learned head replacing SteerMoE's hand-engineered statistic for routing intervention on **OLMoE-1B-7B**. Beats SteerMoE (ICML 2026) by **+0.101 mean** across six faithfulness benchmarks, with **+0.288 on FaithEval-Inconsistent**. *Manuscript in preparation.*
+
+### 🎮 [Adversarial Co-Evolution of RL and LLM Agents](https://github.com/nikelroid/adversarial-coevolution)
+*With Prof. Yan Liu · USC*
+
+Distributed multi-core PPO pipeline with a 3-phase curriculum reaching **99.12% win rate** on Gin Rummy. Master-Worker inference engine distilling **Llama-3 / Gemma / GPT-OSS** strategic knowledge into compact RL policies.
+
+### 🎙️ [Linguistic-Agnostic Speech Emotion Recognition](https://github.com/nikelroid/linguistic-agnostic-ser)
+*With Prof. Mohammad Soleymani · USC SAIL*
+
+MLOps probing framework in PyTorch + HuggingFace over **six pretrained speech encoders × eight datasets** via SLURM, with a FastAPI / JS dashboard for real-time layer-wise paralinguistic analysis.
+
+---
+
+## 🛠️ Tech Stack
 
 **Languages**
-<br>
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-<img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" />
 
-**ML & Deep Learning**
-<br>
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-<img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" />
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-<img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
-<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 
-**RL & Simulation** &nbsp; <sub>Stable-Baselines3 · PettingZoo · Gymnasium · Ollama · vLLM</sub>
+**ML / Deep Learning**
 
-**Data**
-<br>
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-<img src="https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white" />
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" />
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-FFD21E?style=for-the-badge&logoColor=black)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 
-**MLOps & Cloud**
-<br>
-<img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
-<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
-<img src="https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apache-airflow&logoColor=white" />
-<img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" />
-<img src="https://img.shields.io/badge/DVC-945DD6?style=for-the-badge&logo=dvc&logoColor=white" />
-<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" />
+**MLOps & Infrastructure**
 
-**Storage & Systems**
-<br>
-<img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-<img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
+![Weights & Biases](https://img.shields.io/badge/W%26B-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=black)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![SLURM](https://img.shields.io/badge/SLURM-2C2C2C?style=for-the-badge&logo=linux&logoColor=white)
 
----
+**Databases & Cloud**
 
-### 📂 Featured Projects
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
 
-| Project | What it does | Stack |
-| :--- | :--- | :--- |
-| [**Risk-Scaled Steering in MoE**](https://github.com/adsrivatsa/llm-steering) | Token-aware steering for MoE LLMs — 3D delta tensors that dynamically scale expert activations to improve safety at inference time. | `vLLM` `PyTorch` `HF` |
-| [**Linguistic-Agnostic SER**](https://github.com/Nikelroid/linguistic-agnostic-ser) | Probing framework that measures how speech-emotion transformers encode paralinguistic vs. acoustic information across hidden layers. | `PyTorch` `HF` |
-| [**Adversarial Co-Evolution**](https://github.com/Nikelroid/adversarial-coevolution) | Trains PPO agents against LLM opponents in imperfect-information card games via curriculum learning and knowledge distillation. | `PPO` `Ollama` |
-| [**Multi-Modal Sentiment Classification**](https://github.com/Nikelroid) | Sentiment analysis over image-text conversations with time-dynamics exploration of multimodal cues. | `PyTorch` `Pandas` |
+**Robotics**
 
-> Replace the last row's link with the real repo URL — the original pointed to a Google search.
+![ROS](https://img.shields.io/badge/ROS-22314E?style=for-the-badge&logo=ros&logoColor=white)
+![Kinematics](https://img.shields.io/badge/Kinematics-grey?style=for-the-badge)
+![Motion%20Planning](https://img.shields.io/badge/Motion%20Planning-grey?style=for-the-badge)
 
 ---
 
-### 📊 GitHub
+## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Nikelroid&theme=tokyonight&hide_border=true" height="165" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Nikelroid&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nikelroid&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Nikelroid&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nikelroid&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="165" />
+  <img src="https://streak-stats.demolab.com?user=Nikelroid&theme=tokyonight&hide_border=true" />
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=nikelroid&label=Profile%20views&color=0e75b6&style=flat" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Nikelroid&theme=tokyonight&no-frame=true&row=1&column=7" />
 </p>
+
+---
+
+## 📫 Get in Touch
+
+🌐 **Website:** [kelidari.com](https://kelidari.com) &nbsp;·&nbsp;
+📧 **Email:** [kelidari@usc.edu](mailto:kelidari@usc.edu) &nbsp;·&nbsp;
+💼 **LinkedIn:** [nima-kelidari](https://linkedin.com/in/nima-kelidari)
+
+---
+
+<p align="center"><i>Thanks for visiting! ⭐</i></p>
