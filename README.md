@@ -42,7 +42,7 @@ MLOps probing framework in PyTorch + HuggingFace over **six pretrained speech en
 
 ## Fun: 🎸 **[Dastan — Gesture Guitar Studio](https://github.com/Nikelroid/dastan-gesture-guitar)**
 
-play real guitar with bare hands and a webcam: gesture-controlled chords, Persian & flamenco rhythms, a theremin-style melody hand, and in-browser recording — all in one dependency-free HTML file.
+play real guitar with bare hands and a webcam: gesture-controlled chords, Persian & flamenco rhythms, a theremin-style melody hand, and in-browser recording — all in one dependency-free HTML file. [▶ Try it live](https://kelidari.com/dastan-gesture-guitar/)
 
 ---
 
