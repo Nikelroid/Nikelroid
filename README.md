@@ -39,7 +39,7 @@ Distributed multi-core PPO pipeline with a 3-phase curriculum reaching **99.12% 
 MLOps probing framework in PyTorch + HuggingFace over **six pretrained speech encoders × eight datasets** via SLURM, with a FastAPI / JS dashboard for real-time layer-wise paralinguistic analysis.
 
 ---
-## Fun: 🎸 **[Dastan — Gesture Guitar Studio](https://github.com/Nikelroid/dastan-gesture-guitar)**
+Fun: 🎸 **[Dastan — Gesture Guitar Studio](https://github.com/Nikelroid/dastan-gesture-guitar)**
 play real guitar with bare hands and a webcam: gesture-controlled chords, Persian & flamenco rhythms, a theremin-style melody hand, and in-browser recording — all in one dependency-free HTML file.
 ---
 
