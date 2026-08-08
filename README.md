@@ -14,11 +14,11 @@
 
 ## 🎓 About Me
 
-- 🏥 **Now (Summer 2026):** Computational Optimization Intern at **Memorial Sloan Kettering Cancer Center** — GPU-accelerated convex solvers behind radiotherapy treatment planning (**~2× faster warm starts**, **~100× tighter optimality gap** than the production solver)
+- 🏥 **Now (Summer 2026):** Computational Optimization Intern at **Memorial Sloan Kettering Cancer Center** — GPU-accelerated convex solvers behind radiotherapy treatment planning (**Bayesian-optimized warm starts: 78 → 21 iterations, 3.7× fewer than hand-tuning**, on QPs up to **216K beamlet variables**)
 - 🔭 **MS in Computer Science (AI)** at **USC Viterbi**, finishing Dec 2026 (GPA 3.55)
 - 🎓 **BS in Computer Science** from **Sharif University of Technology** (**Aryamehr University of Technology**)
 - 🧪 Running three concurrent research projects with USC NLP, USC ICT (IHP Lab), and Prof. Yan Liu's lab
-- 📄 First preprint on arXiv — [2607.06854](https://arxiv.org/abs/2607.06854) — and an MoE-steering manuscript in preparation
+- 📄 First-author paper **accepted to AIIDE 2026 (AAAI)** — [2607.06854](https://arxiv.org/abs/2607.06854) — plus a co-authored preprint ([2608.04669](https://arxiv.org/abs/2608.04669)) and an MoE-steering manuscript in preparation
 - 💼 Open to **summer research** and **PhD positions for Fall 2027**
 - 📍 Los Angeles, CA
 
@@ -32,7 +32,7 @@
 A **50K-parameter** learned head replacing SteerMoE's hand-engineered statistic for routing intervention on **OLMoE-1B-7B**. Beats SteerMoE (ICLR 2026) by **+0.101 mean** across six faithfulness benchmarks — **4× its gain** — with **+0.288 on FaithEval-Inconsistent**, and the recipe transfers across **three MoE families (7B–47B, 8–128 experts)**. *Manuscript in preparation.* · [Project page](https://kelidari.com/moe-steering-3d-delta/)
 
 ### 🎮 [Adversarial Co-Evolution of RL and LLM Agents](https://github.com/Nikelroid/adversarial-coevolution)
-*With Prof. Yan Liu · USC* · 📄 [arXiv:2607.06854](https://arxiv.org/abs/2607.06854)
+*With Prof. Yan Liu · USC* · 📄 [arXiv:2607.06854](https://arxiv.org/abs/2607.06854) · 🏆 **Accepted to AIIDE 2026 (AAAI)**
 
 Distributed PPO/TRPO pipeline with a rising-opponent curriculum over **100+ controlled runs**, reaching a **99.12% win rate vs baseline agents** on Gin Rummy. Master–Worker inference engine (14 GPU workers, ~32 queries/s, **62× faster model loading**) bringing **Llama-3 / Gemma / GPT-OSS** into the training loop. [Project page](https://kelidari.com/adversarial-coevolution/)
 
