@@ -31,7 +31,7 @@
 
 - **[3D-DELTA](https://kelidari.com/moe-steering-3d-delta/)** — 50K-parameter head steering MoE routing at inference, **4×** the SteerMoE (ICLR 2026) gain
 - **[Adversarial Co-Evolution](https://github.com/Nikelroid/adversarial-coevolution)** — distributed PPO/TRPO against LLM opponents · **AIIDE 2026**
-- **[Language-Agnostic SER](https://kelidari.com/linguistic-agnostic-ser/)** — 6 speech encoders × 8 datasets; sparse autoencoders isolate **61** emotion features
+- **[Language-Agnostic SER](https://github.com/Nikelroid/linguistic-agnostic-ser)** — 6 speech encoders × 8 datasets; sparse autoencoders isolate **61** emotion features
 
 ### Stack
 
