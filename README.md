@@ -29,12 +29,28 @@
 
 ### Research
 
+- **[Tri-Modal Sentiment Analysis](https://kelidari.com/multimodal-sentiment-classification/)** — text + face + voice fused at **74.5% acc / 0.743 wF1 on MELD**, deployed on scale-to-zero Cloud Run with CI/CD. A 2022 course project stuck at 63%: modern backbones barely moved it, changing the **data** gained **11.5 points**
 - **[3D-DELTA](https://kelidari.com/moe-steering-3d-delta/)** — a **197K-parameter** head steering MoE routing at inference with zero weight changes, **4×** the SteerMoE (ICLR 2026) gain; transfers across **four MoE families, 1.3B–30.5B**
 - **[Adversarial Co-Evolution](https://github.com/Nikelroid/adversarial-coevolution)** — masked PPO/TRPO against a gold-standard expert and distributed LLM opponents, on PettingZoo/RLCard · **AIIDE 2026**
 - **[Language-Agnostic SER](https://github.com/Nikelroid/linguistic-agnostic-ser)** — 6 speech encoders × 8 datasets; sparse autoencoders isolate **61** emotion features
 
+### Try it in your browser
+
+No install, no signup. Everything below is live.
+
+| | |
+|---|---|
+| 🎭 **[Tri-Modal Sentiment Playground](https://kelidari.com/multimodal-sentiment-classification/)** | Type, show your face, or record your voice — three models read you independently and a confidence-weighted fusion arbitrates. Local mode keeps your data on your machine |
+| 🎙️ **[Voice Calibration Lab](https://kelidari.com/multimodal-sentiment-classification/lab.html)** | Teach it *your* prosody in 5 minutes — 88.3% → **96.7%** leave-one-out |
+| 😐 **[Face Calibration Lab](https://kelidari.com/multimodal-sentiment-classification/face-lab.html)** | Seven acted expressions, auto-captured — 81% → **90.5%** leave-one-out |
+| 🧪 **[ML from Scratch — Interactive Lab](https://kelidari.com/machine-learning-implementations/)** | 10 algorithms in NumPy, each training live in the browser: backprop, AdaBoost, K-means++, HMM Viterbi, attention, Q-learning |
+| ♟️ **[Co-Evolution Explorer](https://kelidari.com/adversarial-coevolution/explorer.html)** | All **76 runs / 412 GPU-hours** behind the AIIDE paper — including the 99.12% that turned out to be 34% |
+| 🗣️ **[Speech Emotion Explorer](https://kelidari.com/linguistic-agnostic-ser/explorer.html)** | Layer-by-layer probing across 6 encoders, 8 corpora, 5 languages |
+| 🎸 **[Dastan — Gesture Guitar](https://kelidari.com/dastan-gesture-guitar/)** | Play chords with your hands. One HTML file, 25 ms audio lookahead |
+| ⚽ **[World Cup 2026 Schedule](https://kelidari.com/FWC26-Schedule/)** | Built because I wanted it to exist |
+
 ### Stack
 
-`Python` `Java` `C++` `SQL` · `PyTorch` `JAX` `TensorFlow` `Hugging Face` `vLLM` · `CUDA` `CuPy` `SLURM` · `Docker` `Kubernetes` `Jenkins` `MLflow` `FastAPI` · `GCP` `AWS` · `ROS`
+`Python` `Java` `C++` `SQL` · `PyTorch` `JAX` `TensorFlow` `Hugging Face` `vLLM` · `CUDA` `CuPy` `SLURM` · `Docker` `Kubernetes` `Jenkins` `GitHub Actions` `MLflow` `FastAPI` · `GCP (Cloud Run)` `AWS` `Azure` · `ROS`
 
-🎸 For fun: **[Dastan](https://kelidari.com/dastan-gesture-guitar/)** — play guitar with hand gestures through your webcam. More in the [full project index](https://kelidari.com/projects/).
+More in the [full project index](https://kelidari.com/projects/).
