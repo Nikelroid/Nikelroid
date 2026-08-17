@@ -29,7 +29,6 @@
 
 ### Research
 
-- **[Tri-Modal Sentiment Analysis](https://kelidari.com/multimodal-sentiment-classification/)** — text + face + voice fused at **74.5% acc / 0.743 wF1 on MELD**, deployed on scale-to-zero Cloud Run with CI/CD. A 2022 course project stuck at 63%: modern backbones barely moved it, changing the **data** gained **11.5 points**
 - **[3D-DELTA](https://kelidari.com/moe-steering-3d-delta/)** — a **197K-parameter** head steering MoE routing at inference with zero weight changes, **4×** the SteerMoE (ICLR 2026) gain; transfers across **four MoE families, 1.3B–30.5B**
 - **[Adversarial Co-Evolution](https://github.com/Nikelroid/adversarial-coevolution)** — masked PPO/TRPO against a gold-standard expert and distributed LLM opponents, on PettingZoo/RLCard · **AIIDE 2026**
 - **[Language-Agnostic SER](https://github.com/Nikelroid/linguistic-agnostic-ser)** — 6 speech encoders × 8 datasets; sparse autoencoders isolate **61** emotion features
